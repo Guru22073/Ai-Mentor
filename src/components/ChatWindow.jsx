@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import "../styles/ChatWindow.css";
+import Header from "./Header";
 
 const ChatWindow = () => {
   return (
-    <div>
-      ChatWindow
-    </div>
-  )
-}
+    <div className="chat-container">
+      <Header />
 
-export default ChatWindow
+      <main className="message-list">
+        generated response
+      </main>
+
+      <footer className="chat-input-area">
+        input chat box
+      </footer>
+    </div>
+  );
+};
+
+export default ChatWindow;
