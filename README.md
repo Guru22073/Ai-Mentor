@@ -1,4 +1,4 @@
-# 🤖 AI Coding Mentor
+# 🤖 AI Coding Mentor (Still in developing)
 
 Your personal AI assistant for conquering coding challenges. This Chrome extension provides on-demand help and explains fundamental concepts for problems on platforms like LeetCode, HackerRank, and Codeforces.
 
