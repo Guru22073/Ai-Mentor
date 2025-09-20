@@ -1,1 +1,0 @@
-console.log("AI Mentor content script loaded!");
