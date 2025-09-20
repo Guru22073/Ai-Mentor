@@ -1,10 +1,13 @@
+header{
+  background-color: #00cf4f;
+  border-bottom: 1px solid #c9ebce;
+}
+
 .app-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 12px;
-  background-color: #f1f1f1;
-  border-bottom: 1px solid #ddd;
+  padding: 12px 12px;
 }
 
 .logo-container {
