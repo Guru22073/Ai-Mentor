@@ -1,8 +1,51 @@
+/* Theme Variables */
+:root[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-header: #00cf4f;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-header: #ffffff;
+  --border-color: #ddd;
+  --border-light: #c9ebce;
+  --message-ai-bg: #e7e7e7;
+  --message-ai-text: #333333;
+  --message-user-bg: #00cf4f;
+  --message-user-text: #ffffff;
+  --input-bg: #ffffff;
+  --input-border: #ccc;
+  --button-hover: rgba(0, 207, 79, 0.1);
+  --icon-color: #333333;
+}
+
+:root[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-header: #1e4d2b;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-header: #ffffff;
+  --border-color: #404040;
+  --border-light: #3d5a42;
+  --message-ai-bg: #3d3d3d;
+  --message-ai-text: #ffffff;
+  --message-user-bg: #00a542;
+  --message-user-text: #ffffff;
+  --input-bg: #2d2d2d;
+  --input-border: #555;
+  --button-hover: rgba(0, 165, 66, 0.2);
+  --icon-color: #ffffff;
+}
+
 body {
-    margin: 0;
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 div#root {
-    min-width: 38rem;
-    max-width: 48rem;
+  min-width: 38rem;
+  max-width: 48rem;
+  background-color: var(--bg-primary);
 }
