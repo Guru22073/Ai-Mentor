@@ -1,3 +1,4 @@
+/* Theme Variables */
 :root[data-theme="light"] {
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
@@ -20,7 +21,7 @@
 :root[data-theme="dark"] {
   --bg-primary: #1a1a1a;
   --bg-secondary: #2d2d2d;
-  --bg-header: #1e4d2b;
+  --bg-header: #00a542;
   --text-primary: #ffffff;
   --text-secondary: #cccccc;
   --text-header: #ffffff;
