@@ -1,8 +1,8 @@
 /* Theme Variables */
 :root[data-theme="light"] {
-  --bg-primary: #ffffff;
+  --bg-primary: #ecfcfe;
   --bg-secondary: #f8f9fa;
-  --bg-header: #00cf4f;
+  --bg-header: #99d8ff;
   --text-primary: #333333;
   --text-secondary: #666666;
   --text-header: #ffffff;
@@ -19,9 +19,9 @@
 }
 
 :root[data-theme="dark"] {
-  --bg-primary: #1a1a1a;
+  --bg-primary: #022b3b;
   --bg-secondary: #2d2d2d;
-  --bg-header: #00a542;
+  --bg-header: #0f0f1a;
   --text-primary: #ffffff;
   --text-secondary: #cccccc;
   --text-header: #ffffff;
