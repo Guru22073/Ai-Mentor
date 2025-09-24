@@ -4,7 +4,8 @@
   "version": "1.0",
   "description": "An AI mentor for online coding platforms.",
   "permissions": [
-    "storage"
+    "storage",
+    "tabs"
   ],
   "host_permissions": [
     "https://generativelanguage.googleapis.com/"
@@ -19,18 +20,18 @@
   "content_scripts": [
     {
       "matches": [
-        "https://leetcode.com/problems/",
-        "https://www.hackerrank.com/challenges/",
-        "https://codeforces.com/problemset/problem/",
-        "https://www.codechef.com/problems/",
-        "https://atcoder.jp/contests//tasks/",
-        "https://www.topcoder.com/challenges/",
-        "https://practice.geeksforgeeks.org/problems/",
-        "https://www.hackerearth.com/practice/",
-        "https://www.hackerearth.com/challenges/",
-        "https://www.spoj.com/problems/",
-        "https://www.codewars.com/kata/",
-        "https://projecteuler.net/problem=",
+        "https://leetcode.com/problems/*",
+        "https://www.hackerrank.com/challenges/*",
+        "https://codeforces.com/problemset/problem/*",
+        "https://www.codechef.com/problems/*",
+        "https://atcoder.jp/contests/*/tasks/*",
+        "https://www.topcoder.com/challenges/*",
+        "https://practice.geeksforgeeks.org/problems/*",
+        "https://www.hackerearth.com/practice/*",
+        "https://www.hackerearth.com/challenges/*",
+        "https://www.spoj.com/problems/*",
+        "https://www.codewars.com/kata/*",
+        "https://projecteuler.net/problem=*",
         "https://www.coderbyte.com/challenges/*"
       ],
       "js": [

@@ -15,6 +15,14 @@ header {
   font-weight: bold;
   font-size: 1.2em;
   color: var(--text-header);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lock-indicator {
+  font-size: 0.8em;
+  opacity: 0.8;
 }
 
 .controls-container {
@@ -40,6 +48,14 @@ header {
 
 .icon-button.theme-toggle:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-button.lock-button.locked {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.icon-button.lock-button.locked:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .icon-button svg {

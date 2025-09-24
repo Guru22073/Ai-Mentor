@@ -1,10 +1,13 @@
 import ChatWindow from "./components/ChatWindow";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { LockProvider } from "./contexts/LockContext";
 
 function App() {
   return (
     <ThemeProvider>
-      <ChatWindow /> 
+      <LockProvider>
+        <ChatWindow /> 
+      </LockProvider>
     </ThemeProvider>
   );
 }

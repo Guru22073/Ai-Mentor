@@ -1,5 +1,4 @@
 const GEMINI_API_KEY = "AIzaSyATuxgtHzF2cyWwbKDCelJVAhkSCls0Vjo";
-
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 /**
@@ -39,6 +38,20 @@ async function getAIAssistance(problemText, question) {
   }
 }
 
+chrome.action.onClicked.addListener(async (tab) => {
+  const result = await chrome.storage.local.get(['isLocked']);
+  
+  if (result.isLocked) {
+    await chrome.windows.create({
+      url: chrome.runtime.getURL(`index.html?detached=true&windowId=${Date.now()}`),
+      type: 'popup',
+      width: 600,
+      height: 500,
+      focused: true
+    });
+  }
+});
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   let keepChannelOpen = false;
 
@@ -59,4 +72,11 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       break;
   }
   return keepChannelOpen;
+});
+
+chrome.windows.onRemoved.addListener(async (windowId) => {
+  const result = await chrome.storage.local.get(['isLocked']);
+  if (result.isLocked) {
+    await chrome.storage.local.set({ isLocked: false });
+  }
 });
