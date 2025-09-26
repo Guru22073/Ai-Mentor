@@ -1,5 +1,6 @@
-const GEMINI_API_KEY = "AIzaSyATuxgtHzF2cyWwbKDCelJVAhkSCls0Vjo";
-const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
+const GEMINI_API_KEY = "AIzaSyCPyFwv9JcXAIJM3swRdPSR936Rp1MnpUI";
+const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
+
 
 /**
  * Makes a contextual API call to the Google Gemini API.
