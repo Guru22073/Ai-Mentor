@@ -7,18 +7,32 @@
 
 Your personal AI assistant for conquering coding challenges. This Chrome extension provides intelligent, on-demand assistance and explains fundamental programming concepts for problems on platforms like LeetCode, HackerRank, and Codeforces.
 
+## Demo:
+![Demo of the Extension on LeetCode.com/problems/*](public/image.png "Median of two Sorted array getting help by the extension")
+
 ## 📋 Table of Contents
 
-- [About The Project](#-about-the-project)
-- [Features](#-features)
-- [Built With](#️-built-with)
-- [Getting Started](#-getting-started)
-- [Usage](#-usage)
-- [Development](#️-development)
-- [Roadmap](#️-roadmap)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Contact](#-contact)
+- [🤖 AI Coding Mentor](#-ai-coding-mentor)
+  - [Demo:](#demo)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [📖 About The Project](#-about-the-project)
+    - [🎯 Key Objectives](#-key-objectives)
+  - [✨ Features](#-features)
+  - [🛠️ Built With](#️-built-with)
+  - [🚀 Getting Started](#-getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation \& Setup](#installation--setup)
+  - [💻 Usage](#-usage)
+  - [🗺️ Roadmap](#️-roadmap)
+    - [Planned Features](#planned-features)
+  - [🛠️ Development](#️-development)
+    - [Project Structure](#project-structure)
+    - [Available Scripts](#available-scripts)
+    - [Development Setup](#development-setup)
+  - [🤝 Contributing](#-contributing)
+  - [📄 License](#-license)
+  - [📧 Contact](#-contact)
+  - [🙏 Acknowledgments](#-acknowledgments)
 
 ![AI Coding Mentor Demo](https://via.placeholder.com/800x450.png?text=AI+Coding+Mentor+Extension+Demo)
 
