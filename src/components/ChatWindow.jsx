@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../styles/ChatWindow.css";
 import Header from "./Header";
+import MessageRenderer from "./MessageRenderer";
 import { CircleChevronUp } from "lucide-react";
-
 
 let chrome;
 if (import.meta.env.MODE === 'development') {
@@ -12,7 +12,7 @@ if (import.meta.env.MODE === 'development') {
       sendMessage: (msg) => console.log('Mocked sendMessage:', msg),
       onMessage: {
         addListener: (cb) => {
-          setTimeout(() => cb({ type: 'ASSISTANCE_RECEIVED', payload: { text: 'Dev Mode: Mocked AI response.' } }), 2000);
+          setTimeout(() => cb({ type: 'ASSISTANCE_RECEIVED', payload: { text: 'Dev Mode: Mocked AI response with **markdown** support!\n\n``````\n\nThis is a list:\n- Item 1\n- Item 2\n- Item 3' } }), 2000);
         },
         removeListener: () => {}
       }
@@ -21,7 +21,6 @@ if (import.meta.env.MODE === 'development') {
 } else {
   chrome = window.chrome;
 }
-
 
 const ChatWindow = () => {
   const [messages, setMessages] = useState([
@@ -64,7 +63,7 @@ const ChatWindow = () => {
     if (!input.trim() || isLoading || !problemText) return;
 
     const userMessage = { role: 'user', text: input };
-    const loadingMessage = { role: 'ai', text: 'Thinking...' };
+    const loadingMessage = { role: 'ai', text: 'Thinking...', isLoading: true };
     
     setMessages(prev => [...prev, userMessage, loadingMessage]);
     const currentInput = input;
@@ -85,8 +84,16 @@ const ChatWindow = () => {
       <Header />
       <div className="message-list">
         {messages.map((message, index) => (
-          <div key={index} className={`message-bubble ${message.role}`}>
-            {message.text}
+          <div key={index} className={`message-wrapper ${message.role}`}>
+            <div className="message-avatar">
+              {message.role === 'ai' ? '🤖' : '👤'}
+            </div>
+            <div className={`message-bubble ${message.role}`}>
+              <MessageRenderer 
+                message={message} 
+                isLoading={message.isLoading || false}
+              />
+            </div>
           </div>
         ))}
         <div ref={messagesEndRef} />
