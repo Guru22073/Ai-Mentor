@@ -8,7 +8,7 @@
 Your personal AI assistant for conquering coding challenges. This Chrome extension provides intelligent, on-demand assistance and explains fundamental programming concepts for problems on platforms like LeetCode, HackerRank, and Codeforces.
 
 ## Demo:
-![Demo of the Extension on LeetCode.com/problems/*](public/demo.mp4)
+<video src="public/demo.mp4" width="320" height="240" controls></video>
 
 ## 📋 Table of Contents
 
