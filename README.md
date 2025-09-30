@@ -7,13 +7,17 @@
 
 Your personal AI assistant for conquering coding challenges. This Chrome extension provides intelligent, on-demand assistance and explains fundamental programming concepts for problems on platforms like LeetCode, HackerRank, and Codeforces.
 
-## Demo:
-<video src="public/demo.mp4" width="320" height="240" controls></video>
+## Demo
+
+<a href="https://github.com/Guru22073/Ai-Mentor/blob/main/public/demo.mp4" target="_blank">
+  <img src="./public/demo-thumbnail.png" alt="AI Coding Mentor Demo" style="max-width:100%;">
+</a>
+
 
 ## 📋 Table of Contents
 
 - [🤖 AI Coding Mentor](#-ai-coding-mentor)
-  - [Demo:](#demo)
+  - [Demo](#demo)
   - [📋 Table of Contents](#-table-of-contents)
   - [📖 About The Project](#-about-the-project)
     - [🎯 Key Objectives](#-key-objectives)
@@ -26,8 +30,6 @@ Your personal AI assistant for conquering coding challenges. This Chrome extensi
   - [🙏 Acknowledgments](#-acknowledgments)
 
 ![AI Coding Mentor Demo](https://via.placeholder.com/800x450.png?text=AI+Coding+Mentor+Extension+Demo)
-
-> 🚀 **Coming Soon**: Live demo GIF showcasing the extension in action!
 
 ---
 
